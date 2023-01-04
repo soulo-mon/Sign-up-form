@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica sans-serif;
+    /* font-weight: 700; */
+}
+
+#container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header section */
+header{
+padding-top: 32px;
+padding-bottom: 28px;
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text{
+    margin-top: 32px;
+    text-align: center;
+}
+
+.header-text h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+    margin-bottom: 0;
+}
+
+.signup-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.facebook-btn, .google-btn{
+    padding: 10px;  
+}
+
+.facebook-btn button{
+    background-color: #4267B2;
+    border: #4267B2;
+    color: white;
+    font-size: 15px; 
+    font-weight: 700;
+    padding-top: 0;
+    border-radius: 40px;
+    width: 312px;
+    height: 45.667px;
+}
+
+.google-btn button{
+    background-color: white;
+    font-size: 15px; 
+    font-weight: 700;
+    border-radius: 40px;
+    width: 312px;
+    height: 45.667px;
+    margin-bottom: 5px;
+}
+
+.divider {
+    display: flex; /* Use flex layout to position the elements vertically */
+    align-items: center; /* Center the elements vertically within the container */
+    width: 100%; /* Make the divider take up the full width of the container */
+}
+  
+.line {
+    border-top: 1px solid black; /* Add a 1px solid black border to the top of the div */
+    flex-grow: 1; /* Make the div stretch to fill the available space */
+    width: 30%; /* Limit the width of the div to 40% of the container width */
+}
+  
+.text-container {
+    text-align: center; /* Center the text within the container */
+    padding: 0 10px; /* Add some padding around the text */
+}
+  
+  
+  
+/* Form section */
+
+form{
+    padding: 10px;
+    padding-top: 20px;
+    width: 327.333px;
+    display: block;
+    margin: auto;
+}
+
+.email, .name, .password{
+    display: grid;
+    padding-bottom: 20px;
+}
+label{
+    font-size: 15px;
+    font-weight: 700;
+}
+input{
+    margin-top: 10px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 10px
+}
+
+form a{
+    color: #1DB954;
+}
+
+input::placeholder{
+    /* padding: 14px; */
+    font-size: 15px;
+}
+.name p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dob{
+    display: flex;
+}
+
+.dob input{
+    width: 65.46px;
+    height: 52px;
+}
+
+select{
+    width: 147.29px;
+    height: 52px;
+    margin: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: gray;
+}
+
+select option{
+    font-size: 18px;  
+}
+
+.gen {
+    display: flex; /* Use flex layout */
+    align-items: center; /* Center the radio inputs and labels vertically */
+} 
+
+.gen .male{
+    padding-right: 20px;
+}
+.male label,
+.female label{
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+  
+
+input[type="checkbox"]{
+    margin-top: -1px;
+    vertical-align: middle;
+}
+.marketing-data{
+    padding-top: 15px;
+}
+
+.marketing-data label{
+    padding-left: 10px;
+    font-weight: 400; 
+}
+
+
+.terms-n-con{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.submit, .log-in{
+    text-align: center;
+    
+}
+
+.submit button{
+    background-color: #1DB954;
+    border-radius: 40px;
+    border: 1px solid #1DB954;
+    width: 154.66px;
+    height: 56px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.log-in{
+    margin-bottom: 20px;
+}
