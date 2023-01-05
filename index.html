@@ -43,23 +43,23 @@
         <form action="#" method="post">
             <div class="email">
                 <label for="email">What's your email?</label>
-                <input type="email" placeholder="Enter your email." name="email" id="email">
+                <input type="email" placeholder="Enter your email." name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                 <a href="#">Use phone number instead.</a>
             </div>
 
             <div class="email">
                 <label for="confirm-email">Confirm your email.</label>
-                <input type="email" placeholder="Enter your email again." name="email" id="email">
+                <input type="email" placeholder="Enter your email again." name="email" id="email" required>
             </div>
 
             <div class="password">
                 <label for="pwd">Create a password</label>
-                <input type="password" placeholder="Create a password." name="password" id="pwd">
+                <input type="password" placeholder="Create a password." name="password" id="pwd" required>
             </div>
 
             <div class="name">
                 <label for="name">What should we call you?</label>
-                <input type="text" placeholder="Enter a profile name." name="name" id="name">
+                <input type="text" placeholder="Enter a profile name." name="name" id="name" required>
                 <p>This appears on your profile.</p>
             </div>
 
@@ -67,11 +67,11 @@
             <div class="dob">
                 <div class="day">
                     <label for="day">Day</label>
-                <input type="number" placeholder="DD" id="day" name="day" min="1" max="31">
+                <input type="number" placeholder="DD" id="day" name="day" min="1" max="31" required>
                 </div>
                 <div class="select-month">
                     <label for="month">Month</label>
-                    <select name="month" id="month">
+                    <select name="month" id="month" required>
                         <option selected disabled value>Month</option>
                         <option value="01">January</option>
                         <option value="02">Feburary</option>
@@ -90,7 +90,7 @@
 
                 <div class="year">
                     <label for="year">Year</label>
-                    <input type="number" placeholder="YYYY" id="year" name="year" min="1900" max="2022">
+                    <input type="number" placeholder="YYYY" id="year" name="year" min="1900" max="2023" required>
                 </div>
                
                
@@ -100,12 +100,12 @@
                 <label for="">What's your gender?</label>
                 <div class="gen">
                     <div class="male">
-                        <input type="radio" name="gender" id="male" value="male">
+                        <input type="radio" name="gender" id="male" value="male" required>
                         <label for="male">Male</label>
                       </div>
                       
                       <div class="female">
-                        <input type="radio" name="gender" id="female" value="female">
+                        <input type="radio" name="gender" id="female" value="female" required>
                         <label for="female">Female</label>
                       </div>
                 </div>
