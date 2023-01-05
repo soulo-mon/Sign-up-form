@@ -80,7 +80,7 @@ padding-bottom: 28px;
 }
   
 .line {
-    border-top: 1px solid black; /* Add a 1px solid black border to the top of the div */
+    border-top: 0.5px solid black; /* Add a 1px solid black border to the top of the div */
     flex-grow: 1; /* Make the div stretch to fill the available space */
     width: 30%; /* Limit the width of the div to 40% of the container width */
 }
@@ -216,4 +216,64 @@ input[type="checkbox"]{
 
 .log-in{
     margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+    #container{
+      margin: 0 159px;
+      width: 450px;
+    }
+
+    header{
+        display: block;
+        margin: 0 auto;
+        padding: 40px 0 0 32px;
+        width: 450px;
+    }
+
+    .brand-logo img{
+        width: 87.75px;
+        height: 27px;
+    }
+
+    .header-text{
+        text-align: center;
+        margin:40px 0 0;
+    }
+
+    .header-text h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+        margin-bottom: 0;
+        width: 80%;
+        margin-left: 45px;
+    }
+
+    .signup-btns{
+        margin-top: 20px;
+    }
+
+    .divider{
+        margin: 0 auto;
+    }
+    .divider .line{
+        width: 160.65px;
+    }
+    
+    form{
+        width: 450px;
+    }
+    .day, .select-month, .year{
+        display: grid;
+    }
+
+    .select-month{
+        margin-top: 10px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
